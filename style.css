@@ -1,0 +1,205 @@
+body{
+    padding:0px 0px;
+    margin: 0px 0px;
+    background-color:black;
+    justify-content: center;
+}
+/* HEADER */
+header{
+    width:100%;
+    height: fit-content;
+    background-color:none;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    background-color: black;
+}
+header nav{
+    margin-right: 5%;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+header li{
+    margin-right: 30px;
+}
+header a{
+    text-decoration: none;
+    font-size: x-large;
+    color:white;
+    font-weight: bolder;
+}
+header h1{
+    color:white;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 5%;
+}
+header a:hover{
+    color:aqua;
+}
+/* HERO SECTION */
+.hero img{
+    height: 100vh;
+    width: calc(100%);
+}
+/* OUR PRODUCTS HEADING */
+#ourp{
+    margin-top: 150px;
+    margin-bottom: 2%;
+    color: darkturquoise;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+}
+/* PRODUCTS */
+#products{
+    text-align: center;
+    padding: 2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.allproducts{
+    width:28%;
+    height: max-content;
+    border: 2px solid #ccc;
+    background:white;
+    box-shadow: 20px 20px 30px #ccc;
+    border-radius: 50px;
+    margin: 3% 2%;
+}
+.allproducts:hover{
+    box-shadow: 20px 20px 30px #cce;
+}
+.allproducts img{
+    width: 95%;
+    padding: 2% 1%;
+    border-radius: 50px;
+}
+.allproducts h2{
+    color:darkcyan;
+}
+.allproducts h3{
+    color:darkslategray;
+    font-weight: bolder;
+}
+.allproducts h4{
+    color:darkseagreen;
+}
+.allproducts button{
+    background-image: linear-gradient(to left, #64b3f4, #c2e59c);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    width: max-content;
+    height:max-content;
+    padding:0% 2%;
+    display:inline-flex;
+    justify-content:center;
+}
+.allproducts button h3{
+    color: white;
+}
+.allproducts button:hover{
+    border-radius: 15px;
+}
+/* ABOUT US AND CONTACT US */
+#info{
+    background-image: url(https://i.ibb.co/Q7qXnsK6/image.png);
+    background-size:cover;
+    background-attachment:scroll;
+}
+#about{
+    text-align: center;
+    display :block;
+    padding-top: 10%;
+}
+#about h1{
+    padding: 3%;
+    text-decoration: underline;
+    color:black;
+}
+#about h2{
+    padding: 3%;
+    color: #333333;
+    font-weight: bolder;
+}
+#contact{
+    padding-top: 7%;
+    text-align: center;
+    display:flexbox;
+    justify-items: center;
+}
+#contact h1{
+    padding: 3% 0px;
+    text-decoration: underline;
+    color:black;
+}
+#contact img{
+    width: auto;
+    height: 50px;
+}
+#contact h2{
+    padding: 2% 0px;
+    color: #333333;
+    font-weight: bolder;
+}
+/* FOOTER */
+#footer{
+    background-color: black;
+    color: white;
+    font-size: medium;
+    width:calc(100%);
+    height:50px;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 2%;
+}
+@media only screen and (max-width:1000px){
+    .hero img{
+        height: auto;
+        width: calc(100%);
+    }
+    .allproducts{
+        width: 70%;
+        height: max-content;
+        margin-top: 10%;
+    }
+    #products{
+        justify-content: center;
+    }
+    #p7{
+        margin-bottom: 10%;
+    }
+    #header{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+
+/* 
+background-image: url(https://downpic.cc/photos/shutter/Downpic.cc-770952964.jpg);
+background-image: url(https://i.ibb.co/Q7qXnsK6/image.png);
+background-image: url(https://i.ibb.co/MyLXShD6/image-1.png);
+*/
+
+
+
+
+
+
+
+
+

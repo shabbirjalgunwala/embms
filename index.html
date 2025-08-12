@@ -2,6 +2,7 @@
     <head>
         <title>E-MBMS Kart</title>
         <link rel="stylesheet" href="style.css">
+        <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     </head>
 
     <body>
@@ -13,95 +14,277 @@
                     <li><a href="#ourp">Products</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#" id="opencart">Cart</a></li>
+                    <!-- <li><i class="lab la-opencart" id="cart-icon"></i></li> -->
                 </ul>
             </nav>
+            <div class="cartdiv" id="cart">
+                <div class="cart-content">
+                    <img src="herocart.png" class="cartmainimg"/>
+                    <div class="cart-product-box" id="cart-product-box">
+                        <!--<img src="https://i.ibb.co/DDBQ4ysv/acer.png" class="product-image"/>
+                        <div class="detail-box">
+                            <div class="product-detail">Acer Predator Helios 500</div>
+                            <div class="product-price">₹3,80,000.00</div>
+                            <input type="number" value="1" class="product-quantity"/>
+                        </div>
+                        <i class="las la-trash cart-remove remove-btn"></i>-->
+                    </div>
+
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₹0</div>
+                    </div>
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <i class="lar la-times-circle" id="close-cart"></i>
+                </div>
+            </div>
         </header>
 
         <div class="hero">
-<!--             <img id="heroimg" src="https://img.freepik.com/premium-photo/close-up-computer-laptop-laptop-with-blank-screen-technology_1236215-1494.jpg?w=900&t=st=1704913568~exp=1704914168~hmac=e14854cd935cb0730d56cd3890b7378767977e063612b9b05f7c86692add9061"/> -->
-                <img id="heroimg" src="https://i.ibb.co/FqVbxpHy/1000533438.png"/>
+            <!-- <img id="heroimg" src="https://img.freepik.com/premium-photo/close-up-computer-laptop-laptop-with-blank-screen-technology_1236215-1494.jpg?w=900&t=st=1704913568~exp=1704914168~hmac=e14854cd935cb0730d56cd3890b7378767977e063612b9b05f7c86692add9061"/> -->
+            <img id="heroimg" src="https://i.ibb.co/FqVbxpHy/1000533438.png"/>
         </div>
                 
-        <h1 id="ourp">Our Products</h1>
+        <h1 id="ourp">Laptop Brands</h1>
+        <div class="brands">
+            <button class="brand-btn active" onclick="filterLaptops('all')">All</button>
+            <button class="brand-btn" onclick="filterLaptops('HP')">HP</button>
+            <button class="brand-btn" onclick="filterLaptops('Dell')">Dell</button>
+            <button class="brand-btn" onclick="filterLaptops('Apple')">Apple</button>
+            <button class="brand-btn" onclick="filterLaptops('Lenovo')">Lenovo</button>
+            <button class="brand-btn" onclick="filterLaptops('Microsoft')">Microsoft</button>
+            <button class="brand-btn" onclick="filterLaptops('Msi')">MSI</button>
+            <button class="brand-btn" onclick="filterLaptops('Acer')">Acer</button>
+            <button class="brand-btn" onclick="filterLaptops('Asus')">Asus</button>
+        </div>
         
         <div id="products">
-            <div id="p0" class="allproducts">
+            <div id="p1" class="allproducts" data-name="Acer Predator Helios" data-price="380000" data-brand="Acer" data-image="https://i.ibb.co/DDBQ4ysv/acer.png">
                 <img src="https://i.ibb.co/DDBQ4ysv/acer.png"/>
                 <h3>Acer Predator Helios 500</h3>
                 <h4>Acer Predator Helios 500 is a top-tier gaming laptop for users prioritizing raw performance and a rich feature set</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : 11<sup>th</sup> Gen Intel i9</li>
+                        <li>RAM : 64GB</li>
+                        <li>ROM : 2TB SSD</li>
+                        <li>OS : Windows 10 Home</li>
+                        <li>System Architecture : 64bit</li>
+                    </ul>
+                </h5>
                 <h2>₹3,80,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p1" class="allproducts">
+            <div id="p2" class="allproducts" data-name="Apple MacBook Pro M4" data-price="350000" data-brand="Apple" data-image="https://i.ibb.co/YTtdFgCb/mac.png">
                 <img src="https://i.ibb.co/YTtdFgCb/mac.png"/>
                 <h3>Apple MacBook Pro M4 Max 16”</h3>
-                <h4>Apple MacBook Pro offering exceptional performance for demanding professional workflows</h4>
+                <h4>Apple MacBook Pro offering exceptional performance for demanding professional workflows and boasting integration</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>CPU : 16-core (12 performance + 4 efficiency)</li>
+                        <li>RAM : 128GB</li>
+                        <li>ROM : 2TB SSD</li>
+                        <li>OS : macOS 15</li>
+                        <li>System Architecture : ARM-based Apple Silicon</li>
+                    </ul>
+                </h5>
                 <h2>₹3,50,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p2" class="allproducts">
+            <div id="p3" class="allproducts" data-name="ASUS ROG Strix" data-price="449000" data-brand="Asus" data-image="https://i.ibb.co/BKBx3389/asus.png">
                 <img src="https://i.ibb.co/BKBx3389/asus.png"/>
                 <h3>ASUS ROG Strix SCAR 18</h3>
                 <h4>The ASUS ROG Strix Scar 18 is a high-performance gaming laptop designed for serious gamers and creative professionals</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : 11<sup>th</sup> Gen Intel i9</li>
+                        <li>RAM : 64GB</li>
+                        <li>ROM : 2TB SSD</li>
+                        <li>OS : Windows 10 Home</li>
+                        <li>System Architecture : 64bit</li>
+                    </ul>
+                </h5>
                 <h2>₹4,49,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p3" class="allproducts">
+            <div id="p4" class="allproducts" data-name="Dell Alienware 18" data-price="412000" data-brand="Dell" data-image="https://i.ibb.co/ZpK086yM/dell.png">
                 <img src="https://i.ibb.co/ZpK086yM/dell.png"/>
                 <h3>Dell Alienware 18 Area-51</h3>
                 <h4>Experience Alienware's flagship 18-inch gaming laptop, built with innovation that brings performance to the most passionate</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : Intel Core Ultra 9 processor 275HX</li>
+                        <li>RAM : 32GB</li>
+                        <li>ROM : 1TB SSD</li>
+                        <li>OS : Windows 11 Pro</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
                 <h2>₹4,12,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p4" class="allproducts">
+            <div id="p5" class="allproducts" data-name="Hp Omen Max 16" data-price="310000" data-brand="HP" data-image="https://i.ibb.co/27b0Dv0Y/hp.png">
                 <img src="https://i.ibb.co/27b0Dv0Y/hp.png"/>
                 <h3>Hp Omen Max 16</h3>
                 <h4>HP Omen Max 16-ah0076TX (2025), offer cutting-edge features for gaming enthusiasts and creators</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : Intel Core Ultra 9</li>
+                        <li>RAM : 32GB</li>
+                        <li>ROM : 1TB SSD</li>
+                        <li>OS : Windows 11 Home</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
                 <h2>₹3,10,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p5" class="allproducts">
+            <div id="p6" class="allproducts" data-name="Lenovo Legion 9i" data-price="452000" data-brand="Lenovo" data-image="https://i.ibb.co/yn0GVdKn/lenovo.png">
                 <img src="https://i.ibb.co/yn0GVdKn/lenovo.png"/>
                 <h3>Lenovo Legion 9i 14th Gen (16, Intel)</h3>
                 <h4>The Lenovo Legion 9i is a top-tier laptop designed for both serious gamers and creative professionals who need powerful performance</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : 14th Generation Intel Core i9-14900HX</li>
+                        <li>RAM : 64GB</li>
+                        <li>ROM : 2TB SSD</li>
+                        <li>OS : Windows 11 Pro</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
                 <h2>₹4,52,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p6" class="allproducts">
+            <div id="p12" class="allproducts" data-name="Dell Pro 16 Plus" data-price="150000" data-brand="Dell" data-image="https://i.ibb.co/6cwLPDL1/dellpro16.png">
+                <img src="https://i.ibb.co/6cwLPDL1/dellpro16.png"/>
+                <h3>Dell Pro 16 Plus</h3>
+                <h4>The Dell Pro 16 Plus is a 16-inch business laptop combining a sleek, durable design with powerful performance and features</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : Intel Core Ultra 7 265U</li>
+                        <li>RAM : 32GB</li>
+                        <li>ROM : 512GB SSD</li>
+                        <li>OS : Windows 11 Pro</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
+                <h2>₹1,50,000.00</h2>
+                <button type="button" class="add-to-cart">
+                    <h3>Add to Cart</h3>
+                </button>
+            </div>
+
+            <div id="p7" class="allproducts" data-name="Microsoft Surface Pro" data-price="228000" data-brand="Microsoft" data-image="">
                 <img src="https://i.ibb.co/dJ4XtHMd/surface.png"/>
                 <h3>Microsoft Surface Pro 11th Edition</h3>
                 <h4>Outstanding performance meets ultimate flexibility With AI-accelerated power and lightning-fast speed</h4>
                 <h2>₹2,28,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
 
-            <div id="p7" class="allproducts">
+            <div id="p8" class="allproducts" data-name="Lenovo Yoga Book 9i" data-price="170000" data-brand="Lenovo" data-image="https://i.ibb.co/fVzQVpVx/lenovoyoga.png">
+                <img src="https://i.ibb.co/fVzQVpVx/lenovoyoga.png"/>
+                <h3>Lenovo Yoga Book 9i 13th Gen</h3>
+                <h4>The Lenovo Yoga Book 9i is designed for users who value a spacious and versatile screen experience in a portable and innovative form factor</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : 13th Gen Intel Core i7-1355U</li>
+                        <li>RAM : 16GB</li>
+                        <li>ROM : 1TB SSD</li>
+                        <li>OS : Windows 11 Pro</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
+                <h2>₹1,70,000.00</h2>
+                <button type="button" class="add-to-cart">
+                    <h3>Add to Cart</h3>
+                </button>
+            </div>
+
+            <div id="p9" class="allproducts" data-name="MSI Titan 18" data-price="450000" data-brand="Msi" data-image="">
                 <img src="https://i.ibb.co/66kcrYS/msi.png"/>
                 <h3>MSI Titan 18 HX A2XW</h3>
                 <h4>MSI Titan 18 HX is a premium gaming and workstation laptop designed for users prioritizing raw power and a visually immersive experience</h4>
                 <h2>₹4,50,000.00</h2>
-                <button type="button">
+                <button type="button" class="add-to-cart">
+                    <h3>Add to Cart</h3>
+                </button>
+            </div>
+
+            <div id="p10" class="allproducts" data-name="Lenovo ThinkPad X1" data-price="210000" data-brand="Lenovo" data-image="https://i.ibb.co/fzFXJV3D/lenovo-thinkpad.png">
+                <img src="https://i.ibb.co/fzFXJV3D/lenovo-thinkpad.png"/>
+                <h3>Lenovo ThinkPad X1 Carbon</h3>
+                <h4>The Lenovo ThinkPad X1 series is a line of premium, high-performance laptops known for their portability, durability, and advanced features</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : Intel Core Ultra 7 155U</li>
+                        <li>RAM : 32GB</li>
+                        <li>ROM : 1TB SSD</li>
+                        <li>OS : Windows 11 Pro</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
+                <h2>₹2,10,000.00</h2>
+                <button type="button" class="add-to-cart">
+                    <h3>Add to Cart</h3>
+                </button>
+            </div>
+
+            <div id="p11" class="allproducts" data-name="Dell XPS 16" data-price="360000" data-brand="Dell" data-image="https://i.ibb.co/B5zfqCBd/dellxps.png">
+                <img src="https://i.ibb.co/B5zfqCBd/dellxps.png"/>
+                <h3>Dell XPS 16</h3>
+                <h4>The Dell XPS 16 is a premium laptop targeting professionals and creatives needing a powerful machine with a stylish design</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : Intel Core Ultra 9 185H</li>
+                        <li>RAM : 32GB</li>
+                        <li>ROM : 1TB SSD</li>
+                        <li>OS : Windows 11 Home</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
+                <h2>₹3,60,000.00</h2>
+                <button type="button" class="add-to-cart">
+                    <h3>Add to Cart</h3>
+                </button>
+            </div>
+
+            <div id="p14" class="allproducts" data-name="Hp ZBook Power 16" data-price="197000" data-brand="HP" data-image="https://i.ibb.co/CcwbBBH/hpzbook.png">
+                <img src="https://i.ibb.co/CcwbBBH/hpzbook.png"/>
+                <h3>Hp ZBook Power 16</h3>
+                <h4>The HP ZBook Power 16 is a mobile workstation designed for professionals needing powerful performance for tasks</h4>
+                <h5>
+                    <ul class="product-spec">
+                        <li>Processor : Intel Core Ultra 7</li>
+                        <li>RAM : 32GB</li>
+                        <li>ROM : 1TB SSD</li>
+                        <li>OS : Windows 11 Pro</li>
+                        <li>System Architecture : 64Bit</li>
+                    </ul>
+                </h5>
+                <h2>₹1,97,000.00</h2>
+                <button type="button" class="add-to-cart">
                     <h3>Add to Cart</h3>
                 </button>
             </div>
@@ -125,6 +308,8 @@
         <div id="footer">
             &copy2025 E-MBMS Kart | College Project
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
 
@@ -154,5 +339,3 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 background: #232526;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ -->
-
-

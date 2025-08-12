@@ -41,13 +41,157 @@ header h1{
     font-size: xx-large;
     margin-left: 5%;
 }
-header a:hover{
+header a:hover,#cart-icon:hover{
     color:aqua;
+}
+#cart-icon{
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    cursor: pointer;
+}
+.cartdiv{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 35%;
+    height: 100vh;
+    padding: 1% 2%;
+    background-color: black;
+    transition: 0.3s;
+    display: none;
+}
+.cartmainimg{
+    width: 100%;
+    height: auto;
+}
+.cart-product-box{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    gap: 2%;
+    margin-top: 2%;
+    justify-content: left;
+    height: max-content;
+}
+.detail-box{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1%;
+}
+.product-detail{
+    font-size:large;
+    font-weight: bold;
+    color: white;
+}
+.cart-content{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+}
+.product-image{
+    height: 50px;
+    width: 60px;
+    object-fit: contain;
+}
+.product-price{
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+.product-quantity{
+    width: 12%;
+    padding: 1% 1%;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    text-align: center;
+}
+.cart-remove{
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    padding: 2% 2%;
+    gap:3%;
+    font-size: x-large;
+    border-top: 2px solid white;
+    font-weight:bolder;
+    color: white;
+}
+.btn-buy{
+    display: flex;
+    margin: 2% auto 0% auto;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    color: white;
+    background-color:black;
+    border: 1px solid white;
+}
+#close-cart{
+    position: absolute;
+    top:1%;
+    right: 1%;
+    color: white;
+    font-size: xx-large;
+    cursor: pointer;
+}
+#close-cart:hover{
+    color: aqua;
 }
 /* HERO SECTION */
 .hero img{
     height: 100vh;
     width: calc(100%);
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 80%;
+    height: max-content;
+    padding: 2% 2%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.brand-btn{
+    width:150px;
+    height:40px;
+    margin-top: 2%;
+    margin-right: 2%;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: large;
+    font-weight: bolder;
+}
+.brand-btn:hover{
+    color:lightblue;
+    border: 2px solid lightblue;
+}
+.brand-btn.active{
+    color: aqua;
+    border: 2px solid aqua;
 }
 /* OUR PRODUCTS HEADING */
 #ourp{
@@ -70,14 +214,14 @@ header a:hover{
 .allproducts{
     width:28%;
     height: max-content;
-    border: 2px solid #ccc;
+    border: 2px solid #cce;
     background:white;
-    box-shadow: 20px 20px 30px #ccc;
+    box-shadow: 10px 10px 20px #cce;
     border-radius: 50px;
     margin: 3% 2%;
 }
 .allproducts:hover{
-    box-shadow: 20px 20px 30px #cce;
+    box-shadow: 10px 10px 20px #ccc;
 }
 .allproducts img{
     width: 95%;
@@ -100,7 +244,7 @@ header a:hover{
     margin-bottom: 20px;
     cursor: pointer;
     border: none;
-    width: max-content;
+    width: 40%;
     height:max-content;
     padding:0% 2%;
     display:inline-flex;
@@ -111,6 +255,13 @@ header a:hover{
 }
 .allproducts button:hover{
     border-radius: 15px;
+}
+.product-spec{
+    list-style: none;
+    display:flexbox;
+    align-items: center;
+    text-align: left;
+    color: brown;
 }
 /* ABOUT US AND CONTACT US */
 #info{
@@ -179,12 +330,15 @@ header a:hover{
     #products{
         justify-content: center;
     }
-    #p7{
+    .allproducts{
         margin-bottom: 10%;
     }
     #header{
         padding-top: 2%;
         padding-bottom: 2%;
+    }
+    .cartdiv{
+        width: 70%;
     }
 }
 
@@ -194,12 +348,3 @@ background-image: url(https://downpic.cc/photos/shutter/Downpic.cc-770952964.jpg
 background-image: url(https://i.ibb.co/Q7qXnsK6/image.png);
 background-image: url(https://i.ibb.co/MyLXShD6/image-1.png);
 */
-
-
-
-
-
-
-
-
-

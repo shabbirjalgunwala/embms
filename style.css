@@ -208,12 +208,11 @@ header a:hover,#cart-icon:hover{
     padding: 2% 2%;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
+    align-items: stretch;
 }
 .allproducts{
     width:28%;
-    height: max-content;
     border: 2px solid #cce;
     background:white;
     box-shadow: 10px 10px 20px #cce;
@@ -257,7 +256,7 @@ header a:hover,#cart-icon:hover{
     border-radius: 15px;
 }
 .product-spec{
-    list-style: none;
+    list-style:square;
     display:flexbox;
     align-items: center;
     text-align: left;
@@ -323,8 +322,7 @@ header a:hover,#cart-icon:hover{
         width: calc(100%);
     }
     .allproducts{
-        width: 70%;
-        height: max-content;
+        width: 43%;
         margin-top: 10%;
     }
     #products{
@@ -341,7 +339,6 @@ header a:hover,#cart-icon:hover{
         width: 70%;
     }
 }
-
 
 /* 
 background-image: url(https://downpic.cc/photos/shutter/Downpic.cc-770952964.jpg);

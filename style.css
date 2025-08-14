@@ -231,29 +231,29 @@ header a:hover,#cart-icon:hover{
     color:darkcyan;
 }
 .allproducts h3{
-    color:darkslategray;
+    color:darkblue;
     font-weight: bolder;
 }
 .allproducts h4{
-    color:darkseagreen;
+    color:darkmagenta;
 }
 .allproducts button{
     background-image: linear-gradient(to left, #64b3f4, #c2e59c);
-    border-radius: 50px;
+    border-radius: 15px;
     margin-bottom: 20px;
     cursor: pointer;
     border: none;
-    width: 40%;
+    width: 80%;
     height:max-content;
     padding:0% 2%;
     display:inline-flex;
     justify-content:center;
 }
 .allproducts button h3{
-    color: white;
+    color:white;
 }
 .allproducts button:hover{
-    border-radius: 15px;
+    background-image: linear-gradient(to right, #64b3f4, #c2e59c);
 }
 .product-spec{
     list-style:square;
@@ -272,6 +272,7 @@ header a:hover,#cart-icon:hover{
     text-align: center;
     display :block;
     padding-top: 10%;
+    width: 100%;
 }
 #about h1{
     padding: 3%;
@@ -286,11 +287,12 @@ header a:hover,#cart-icon:hover{
 #contact{
     padding-top: 7%;
     text-align: center;
-    display:flexbox;
+    display:block;
     justify-items: center;
+    width: 100%;
 }
 #contact h1{
-    padding: 3% 0px;
+    padding: 3%;
     text-decoration: underline;
     color:black;
 }

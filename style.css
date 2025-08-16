@@ -44,6 +44,15 @@ header h1{
 header a:hover,#cart-icon:hover{
     color:aqua;
 }
+#cart-count{
+    background-color: white;
+    color: black;
+    font-size:x-large;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
 #cart-icon{
     color: white;
     font-size: x-large;
@@ -344,4 +353,3 @@ header a:hover,#cart-icon:hover{
         width: 70%;
     }
 }
-

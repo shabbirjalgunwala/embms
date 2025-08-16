@@ -368,5 +368,27 @@ header a:hover,#cart-icon:hover{
     header nav{
         margin-right: 1%;
     }
+    .cartdiv{
+        width: 100%;
+    }
+    .cart-content{
+        width: 90%;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto 0px auto;
+    }
+    #close-cart{
+        top:2%;
+        right: 4%;
+        font-size:50px;
+    }
+    .total{
+        font-size: 50px;
+    }
+    .btn-buy{
+        height: 80px;
+        font-size: xx-large;
+    }
 }
+
 

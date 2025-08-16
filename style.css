@@ -386,7 +386,19 @@ header a:hover,#cart-icon:hover{
         height: 80px;
         font-size: xx-large;
     }
+    .product-image{
+        height: 100px;
+        width: 120px;
+        object-fit: contain;
+    }
+    .product-detail,.product-price,.product-quantity{
+        font-size: x-large;
+    }
+    .cart-remove{
+        font-size: xx-large;
+    }
 }
+
 
 
 

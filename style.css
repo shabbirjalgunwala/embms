@@ -130,7 +130,7 @@ header a:hover,#cart-icon:hover{
 }
 .btn-buy{
     display: flex;
-    margin: 2% auto 0% auto;
+    margin: 2% auto 7% auto;
     width: 50%;
     height: 40px;
     justify-content: center;
@@ -344,3 +344,4 @@ header a:hover,#cart-icon:hover{
         width: 70%;
     }
 }
+

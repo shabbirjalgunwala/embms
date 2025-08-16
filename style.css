@@ -307,6 +307,8 @@ header a:hover,#cart-icon:hover{
     padding: 3%;
     text-decoration: underline;
     color:black;
+    justify-self: center;
+    align-self: center;
 }
 #contact img{
     width: auto;
@@ -316,6 +318,8 @@ header a:hover,#cart-icon:hover{
     padding: 2% 0px;
     color: #333333;
     font-weight: bolder;
+    justify-self: center;
+    align-self: center;
 }
 /* FOOTER */
 #footer{
@@ -365,3 +369,4 @@ header a:hover,#cart-icon:hover{
         margin-right: 1%;
     }
 }
+

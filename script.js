@@ -68,6 +68,7 @@ function addToCart(e) {
     cartBox.querySelector(".cart-remove").addEventListener("click", function () {
         cartBox.remove();
         updateTotal();
+        updateCartCount();
     });
 
     cartBox.querySelector(".product-quantity").addEventListener("change", function () {
@@ -76,6 +77,7 @@ function addToCart(e) {
     });
 
     updateTotal();
+    updateCartCount();
 }
 
 function updateTotal() {
@@ -87,6 +89,11 @@ function updateTotal() {
         total += price * qty;
     });
     document.querySelector(".total-price").innerText = "₹" + total.toLocaleString();
+}
+
+function updateCartCount() {
+    const count = document.querySelectorAll(".cart-box").length;
+    document.getElementById("cart-count").innerText = count;
 }
 
 // function buyNow() {
@@ -146,4 +153,5 @@ function buyNow() {
 
     document.getElementById("cart-product-box").innerHTML = "";
     updateTotal();
+    updateCartCount();
 }

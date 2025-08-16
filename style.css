@@ -353,9 +353,6 @@ header a:hover,#cart-icon:hover{
         padding-top: 2%;
         padding-bottom: 2%;
     }
-    .cartdiv{
-        width: 70%;
-    }
     header h1{
     color:white;
     font-weight: bolder;
@@ -390,5 +387,6 @@ header a:hover,#cart-icon:hover{
         font-size: xx-large;
     }
 }
+
 
 

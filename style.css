@@ -61,19 +61,27 @@ header a:hover,#cart-icon:hover{
     transition: 0.3s;
     display: none;
 }
+.cart-content{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .cartmainimg{
     width: 100%;
     height: auto;
 }
-.cart-product-box{
+.cart-box {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     align-items: center;
     gap: 2%;
     margin-top: 2%;
+    padding: 5px 0;
+    border-bottom: 1px solid gray;
     justify-content: left;
-    height: max-content;
 }
+
 .detail-box{
     display: inline-flex;
     justify-content: space-evenly;
@@ -85,13 +93,7 @@ header a:hover,#cart-icon:hover{
     font-weight: bold;
     color: white;
 }
-.cart-content{
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    justify-content: center;
-}
+
 .product-image{
     height: 50px;
     width: 60px;
@@ -244,10 +246,11 @@ header a:hover,#cart-icon:hover{
     cursor: pointer;
     border: none;
     width: 80%;
-    height:max-content;
-    padding:0% 2%;
+    height: 50px;
+    padding:0px 0px;
     display:inline-flex;
     justify-content:center;
+    align-items: center;
 }
 .allproducts button h3{
     color:white;
@@ -341,9 +344,3 @@ header a:hover,#cart-icon:hover{
         width: 70%;
     }
 }
-
-/* 
-background-image: url(https://downpic.cc/photos/shutter/Downpic.cc-770952964.jpg);
-background-image: url(https://i.ibb.co/Q7qXnsK6/image.png);
-background-image: url(https://i.ibb.co/MyLXShD6/image-1.png);
-*/

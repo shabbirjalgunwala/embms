@@ -230,7 +230,7 @@ header a:hover{
     width:28%;
     border: 2px solid #cce;
     background:white;
-    box-shadow: 10px 10px 20px #cce;
+    box-shadow: 5px 5px 20px #cce;
     border-radius: 50px;
     margin: 3% 2%;
 }
@@ -412,3 +412,4 @@ header a:hover{
         font-size: xx-large;
     }
 }
+

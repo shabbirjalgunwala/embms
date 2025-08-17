@@ -246,18 +246,22 @@ header a:hover{
     padding: 2% 1%;
     border-radius: 50px;
 }
-.allproducts h2{
-    color:darkcyan;
+.allproducts h4,li{
+    background-image:linear-gradient(to right, #141e30, #243b55);
+    background-clip: text;
+    color: transparent;
+}
+.allproducts h2,h3{
+    background-image:linear-gradient(to right, #141e30, #243b55);
+    background-image: linear-gradient(to right, #000000, #434343);
+    background-clip: text;
+    color: transparent;
 }
 .allproducts h3{
-    color:darkblue;
     font-weight: bolder;
 }
-.allproducts h4{
-    color:darkmagenta;
-}
 .allproducts button{
-    background-image: linear-gradient(to left, #64b3f4, #c2e59c);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     border-radius: 15px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -273,14 +277,14 @@ header a:hover{
     color:white;
 }
 .allproducts button:hover{
-    background-image: linear-gradient(to right, #64b3f4, #c2e59c);
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
 }
 .product-spec{
     list-style:square;
     display:flexbox;
     align-items: center;
     text-align: left;
-    color: brown;
+    color:black;
 }
 /* ABOUT US AND CONTACT US */
 #info{
@@ -406,6 +410,7 @@ header a:hover{
         font-size: xx-large;
     }
 }
+
 
 
 

@@ -8,10 +8,6 @@ body{
 header{
     width:100%;
     height: fit-content;
-    background-color:none;
-    background-color: none;
-    background-repeat: no-repeat;
-    background-size: cover;
     display:inline-flex;
     justify-content:space-between;
     align-items: center;
@@ -246,7 +242,14 @@ header a:hover{
     padding: 2% 1%;
     border-radius: 50px;
 }
-.allproducts h4,li{
+.product-spec{
+    list-style:square;
+    display:flexbox;
+    align-items: center;
+    text-align: left;
+    color: #243b55;
+}
+.allproducts h4,h5{
     background-image:linear-gradient(to right, #141e30, #243b55);
     background-clip: text;
     color: transparent;
@@ -260,8 +263,13 @@ header a:hover{
 .allproducts h3{
     font-weight: bolder;
 }
+.allproducts h5{
+    margin: 0px;
+    padding: 0px;
+}
 .allproducts button{
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(to left, #64b3f4, #c2e59c);
+    background-image:linear-gradient(to right, #434343 0%, black 100%);
     border-radius: 15px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -277,14 +285,7 @@ header a:hover{
     color:white;
 }
 .allproducts button:hover{
-    background-image: linear-gradient(to left, #434343 0%, black 100%);
-}
-.product-spec{
-    list-style:square;
-    display:flexbox;
-    align-items: center;
-    text-align: left;
-    color:black;
+    background-image:linear-gradient(to left, #434343 0%, black 100%);
 }
 /* ABOUT US AND CONTACT US */
 #info{
@@ -365,11 +366,14 @@ header a:hover{
         padding-top: 2%;
         padding-bottom: 2%;
     }
+    .cartdiv{
+        width: 70%;
+    }
     header h1{
-    color:white;
-    font-weight: bolder;
-    font-size: xx-large;
-    margin-left: 1%;
+        color:white;
+        font-weight: bolder;
+        font-size: xx-large;
+        margin-left: 1%;
     }
     header li{
         margin-right: 20px;
@@ -410,10 +414,3 @@ header a:hover{
         font-size: xx-large;
     }
 }
-
-
-
-
-
-
-

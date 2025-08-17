@@ -154,4 +154,6 @@ function buyNow() {
     document.getElementById("cart-product-box").innerHTML = "";
     updateTotal();
     updateCartCount();
+    document.getElementById("cart").style.display = "none";
 }
+

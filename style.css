@@ -52,6 +52,7 @@ header a:hover{
     padding: 2px 8px;
     border-radius: 50%;
     margin-left: 10px;
+    border: 1px solid white;
 }
 #opencart:hover #cart-count{
     background-color: black;
@@ -405,6 +406,7 @@ header a:hover{
         font-size: xx-large;
     }
 }
+
 
 
 

@@ -255,7 +255,6 @@ header a:hover{
     color: transparent;
 }
 .allproducts h2,h3{
-    background-image:linear-gradient(to right, #141e30, #243b55);
     background-image: linear-gradient(to right, #000000, #434343);
     background-clip: text;
     color: transparent;
@@ -268,7 +267,6 @@ header a:hover{
     padding: 0px;
 }
 .allproducts button{
-    background-image: linear-gradient(to left, #64b3f4, #c2e59c);
     background-image:linear-gradient(to right, #434343 0%, black 100%);
     border-radius: 15px;
     margin-bottom: 20px;

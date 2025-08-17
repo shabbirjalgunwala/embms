@@ -235,7 +235,7 @@ header a:hover{
     margin: 3% 2%;
 }
 .allproducts:hover{
-    box-shadow: 10px 10px 20px #ccc;
+    box-shadow: 10px 10px 20px #cce;
 }
 .allproducts img{
     width: 95%;
@@ -412,4 +412,5 @@ header a:hover{
         font-size: xx-large;
     }
 }
+
 

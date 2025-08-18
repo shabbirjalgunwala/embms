@@ -310,8 +310,10 @@ header a:hover{
 #contact{
     padding-top: 7%;
     text-align: center;
-    display:block;
+    display:flex;
+    flex-direction: column;
     justify-items: center;
+    justify-content: center;
     width: 100%;
 }
 #contact h1{
@@ -322,8 +324,11 @@ header a:hover{
     align-self: center;
 }
 #contact img{
-    width: auto;
     height: 50px;
+    width: 50px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto 0px auto;
 }
 #contact h2{
     padding: 2% 0px;
@@ -412,5 +417,6 @@ header a:hover{
         font-size: xx-large;
     }
 }
+
 
 

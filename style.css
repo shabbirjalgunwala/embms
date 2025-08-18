@@ -293,7 +293,9 @@ header a:hover{
 }
 #about{
     text-align: center;
-    display :block;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 10%;
     width: 100%;
 }
@@ -417,6 +419,7 @@ header a:hover{
         font-size: xx-large;
     }
 }
+
 
 
 
